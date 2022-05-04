@@ -13,7 +13,7 @@
          <td height="100" bgcolor="#FFFFFF">&nbsp;</td>
       </tr>
       <tr>
-         <td height="25" align="center">Copyright ⓒ GyoJinCompany. All Rights Reserved</td>
+         <td height="25" align="center">Copyright ⓒ GyeongMinCompany. All Rights Reserved</td>
       </tr>
       <tr>
          <td height="25" align="center">This homepage is built with Spring Framework. Made by GyojinLee. E-Mail:<a href="mailto:tiger@gmail.com">tiger@gmail.com</a></td>

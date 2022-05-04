@@ -14,15 +14,15 @@
 
 
 	<center>
-	<table class="t-type01" width="1200" border="0" cellspacing="0" cellpadding="20">
+	<table class="t-type01" width="75%" border="0" cellspacing="0" cellpadding="20">
 		<tr>
-			<td><span class="title01">DEVELOPER GyeongMin PROFILE</span></td>
+			<td><span class="title01">DEVELOPER GyeongMin'S PROFILE</span></td>
 		</tr>
 		<tr>
-			<td><span class="title02">졸리다 급 졸리다 와</span></td>			
+			<td><span class="title02">The wisest men follow their own direction.</span></td>			
 		</tr>
 		<tr>
-			<table width="1100" border="0" cellspacing="0" cellpadding="0">
+			<table width="70%" border="0" cellspacing="0" cellpadding="10">
 				<tr>
 					<td bgcolor="#D5D5D5"><span class="s-text01">J</span><span class="s-text02">AVA</span></td>
 					<td height="500" bgcolor="#353535" rowspan="6" align="center">
