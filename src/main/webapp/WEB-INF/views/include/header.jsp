@@ -12,8 +12,35 @@
 		<tr height="50">
 			<td width="72%">&nbsp;</td>
 			<td width="3%"><a href="${pageContext.request.contextPath}/">홈&nbsp;</a></td>
-			<td width="5%"><a href="login">로그인&nbsp;</a></td>
-			<td width="6%"><a href="join">회원가입&nbsp;</a></td>
+			<td width="5%">
+				<% String sessionId = (String) session.getAttribute("id"); 
+					if(sessionId == null){
+				%>
+					<a href="login">로그인&nbsp;</a>
+				<%
+					}else{	
+				%>
+				
+					<a href="logout">로그아웃&nbsp;</a>	
+				<%
+					}
+				%>
+			</td>
+			<td width="6%">
+				<% 
+					if(sessionId == null){
+				%>
+					<a href="join">회원가입&nbsp;</a>
+				<%
+					}else{	
+				%>
+				
+					<a href="infoModify">수정&nbsp;</a>	
+				<%
+					}
+				%>
+			</td>
+			
 			<td width="5%"><a href="profile">프로필&nbsp;</td>
 			<td width="4%"><a href="question">질문&nbsp;</a></td>
 			<td width="5%"><a href="contact">연락처&nbsp;</a></td>		

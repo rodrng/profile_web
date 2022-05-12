@@ -7,7 +7,7 @@
 <title>## GyeongMin Profile</title>
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/span.css">
 <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/table.css">
-<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/board.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/resources/js/members.js"></script>
 </head>
 <body>
 	<%@ include file="include/header.jsp" %>
@@ -24,34 +24,36 @@
 			<table width="70%" border="0" cellspacing="0" cellpadding="10">
 				<tr>					
 					<td height="500" bgcolor="#D5D5D5" align="center">
-						<table border="0" cellspacing="0" cellpadding="10">							
-							<form action="write" method="post" name="reg_frm">
+						<table border="0" cellspacing="0" cellpadding="10">		
+						<tr>
+								<td colspan="2" class="td-type01">${memberDto.mid}님의 회원정보를 수정하였습니다.</td>
+							</tr>							
+							<form action="infoModifyOk" method="post" name="reg_frm">
 								<tr>
-									<td class="td-type01">ID</td>
-									<td><input id="input01" type="text" name="qid" 
-									value="<%if(session.getAttribute("id") !=null){
-												out.println(session.getAttribute("id"));
-											}else{
-												out.println("GUEST");
-											}%>" 
-									readonly></td>
+									<td class="td-type01">MEMBER ID</td>
+									<td class="memberinfo">${memberDto.mid }</td>
 								</tr>
+								<tr>
+									<td class="td-type01">PASSWORD</td>
+									<td class="memberinfo">${memberDto.mpw }</td>
+								</tr>								
 								<tr>
 									<td class="td-type01">NAME</td>
-									<td><input id="input01" type="text" name="qname"></td>
-								</tr>
-								<tr>
-									<td class="td-type01">QUESTION</td>
-									<td><textarea id="input01" name="qcontent" rows="5" cols="26"></textarea></td>
+									<td class="memberinfo">${memberDto.mname }</td>
 								</tr>
 								<tr>
 									<td class="td-type01">E-MAIL</td>
-									<td><input id="input01" type="text" name="qemail"></td>
+									<td class="memberinfo">${memberDto.memail }</td>
 								</tr>
 								<tr>
+									<td class="td-type01">JOIN DATE</td>
+									<td class="memberinfo">${memberDto.mdate }</td>
+								</tr>
+								
+								<tr>
 									<td colspan="2">
-									<input id="button01" type="button" value="질문입력" onclick="boardConfirm()">&nbsp;
-									<input id="button01" type="button" value="질문목록" onclick="javascript:window.location='list'">	
+									<input id="button01" type="button" value="정보수정" onclick="javascript:window.location='infoModify'">&nbsp;&nbsp;
+									<input id="button01" type="button" value="홈바로가기" onclick="javascript:window.location='index'">
 									</td>
 									
 								</tr>
