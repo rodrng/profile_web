@@ -2,68 +2,76 @@ package com.javagyeongmin.myprofile.dto;
 
 public class BoardDto {
 	
-	private int bnum; // 게시판 번호
-	private String bid; // 게시판 글쓴이 아이디
-	private String bname; // 게시판 글쓴이
-	private String bcontent; // 글 내용
-	private String bemail; // 글쓴이 이메일
-	private String bdate; // 게시판 글쓴 날짜+시간 (가져오기x 찍어주기만할거라 String)
-	
+	private int qnum; // 게시판 번호
+	private String qid; // 게시판 글쓴이 아이디
+	private String qname; // 게시판 글쓴이
+	private String qcontent; // 글 내용
+	private String qemail; // 글쓴이 이메일
+	private String qdate; // 게시판 글쓴 날짜+시간 (가져오기x 찍어주기만할거라 String)
 	
 	public BoardDto() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
-	public BoardDto(int bnum, String bid, String bname, String bcontent, String bemail, String bdate) {
+
+	public BoardDto(int qnum, String qid, String qname, String qcontent, String qemail, String qdate) {
 		super();
-		this.bnum = bnum;
-		this.bid = bid;
-		this.bname = bname;
-		this.bcontent = bcontent;
-		this.bemail = bemail;
-		this.bdate = bdate;
-	}
-	
-	
-	public int getBnum() {
-		return bnum;
-	}
-	public void setBnum(int bnum) {
-		this.bnum = bnum;
-	}
-	public String getBid() {
-		return bid;
-	}
-	public void setBid(String bid) {
-		this.bid = bid;
-	}
-	public String getBname() {
-		return bname;
-	}
-	public void setBname(String bname) {
-		this.bname = bname;
-	}
-	public String getBcontent() {
-		return bcontent;
-	}
-	public void setBcontent(String bcontent) {
-		this.bcontent = bcontent;
-	}
-	public String getBemail() {
-		return bemail;
-	}
-	public void setBemail(String bemail) {
-		this.bemail = bemail;
-	}
-	public String getBdate() {
-		return bdate;
-	}
-	public void setBdate(String bdate) {
-		this.bdate = bdate;
+		this.qnum = qnum;
+		this.qid = qid;
+		this.qname = qname;
+		this.qcontent = qcontent;
+		this.qemail = qemail;
+		this.qdate = qdate;
 	}
 
+	public int getQnum() {
+		return qnum;
+	}
+
+	public void setQnum(int qnum) {
+		this.qnum = qnum;
+	}
+
+	public String getQid() {
+		return qid;
+	}
+
+	public void setQid(String qid) {
+		this.qid = qid;
+	}
+
+	public String getQname() {
+		return qname;
+	}
+
+	public void setQname(String qname) {
+		this.qname = qname;
+	}
+
+	public String getQcontent() {
+		return qcontent;
+	}
+
+	public void setQcontent(String qcontent) {
+		this.qcontent = qcontent;
+	}
+
+	public String getQemail() {
+		return qemail;
+	}
+
+	public void setQemail(String qemail) {
+		this.qemail = qemail;
+	}
+
+	public String getQdate() {
+		return qdate;
+	}
+
+	public void setQdate(String qdate) {
+		this.qdate = qdate;
+	}
+	
 	
 	
 	
